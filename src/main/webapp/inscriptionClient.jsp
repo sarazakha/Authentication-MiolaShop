@@ -37,7 +37,7 @@
     </head>
     <body>
         <div class="login-form">
-            <form action="test.jsp" method="post">
+            <form action="inscriptionClientDb.jsp" method="post">
                 <h2 class="text-center"> Inscription </h2>
 
                 <div class="form-group">
@@ -72,24 +72,18 @@
                     <input type="reset" value="Reinitialiser" class="btn btn-primary btn-block" />
                 </div> 
 
-
                 <font color="red">
                 <c:if test="${not empty param.errMsg}">
                     <c:out value="${param.errMsg}" />
                 </c:if>
                 </font>
-
                 <font color="green">
                 <c:if test="${not empty param.susMsg}">
                     <c:out value="${param.susMsg}" /> 
                     <a href="authentificationClient.jsp"> Connectez-vous </a>
                 </c:if>
                 </font>
-
-
             </form>
         </div> 
-
-
     </body>
 </html>

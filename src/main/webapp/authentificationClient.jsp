@@ -63,9 +63,9 @@
                     <input type="submit" value="Se connecter" class="btn btn-primary btn-block" />
                 </div> 
                 <div class="form-group">
-                    <a href="#">
-                        <input type="button" value=" S'inscrire " class="btn btn-primary btn-block" />
-                    </a>
+                    <p class="text-center"> 
+                        <a href="inscriptionClient.jsp">S'inscrire   </a>
+                    </p>
                 </div> 
                 <font color="red">
                 <c:if test="${not empty param.errMsg}">
